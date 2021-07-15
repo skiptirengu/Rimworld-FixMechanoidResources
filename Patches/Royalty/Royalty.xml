@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Royalty</li>
+    </mods>
+
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- Defs\ThingDefs_Buildings\Buildings_Mech_Turrets.xml -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="Turret_AutoMiniTurret"]/killedLeavings</xpath>
+          <value>
+            <killedLeavings>
+              <ChunkSlagSteel>1</ChunkSlagSteel>
+            </killedLeavings>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="Turret_AutoChargeBlaster"]/killedLeavings</xpath>
+          <value>
+            <killedLeavings>
+              <ChunkSlagSteel>2</ChunkSlagSteel>
+              <ComponentIndustrial>1</ComponentIndustrial>
+            </killedLeavings>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="Turret_AutoInferno"]/killedLeavings</xpath>
+          <value>
+            <killedLeavings>
+              <ChunkSlagSteel>2</ChunkSlagSteel>
+              <ComponentIndustrial>1</ComponentIndustrial>
+            </killedLeavings>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="Turret_AutoMortar"]/killedLeavings</xpath>
+          <value>
+            <killedLeavings>
+              <ChunkSlagSteel>2</ChunkSlagSteel>
+              <ComponentIndustrial>1</ComponentIndustrial>
+            </killedLeavings>
+          </value>
+        </li>
+
+
+        <!-- Defs\ThingDefs_Buildings\Buildings_Mech_Spawners.xml -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="MechCapsule"]/killedLeavings</xpath>
+          <value>
+            <killedLeavings>
+              <ChunkSlagSteel>3</ChunkSlagSteel>
+              <ComponentIndustrial>2</ComponentIndustrial>
+              <Plasteel>15</Plasteel>
+            </killedLeavings>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="MechAssembler"]/killedLeavings</xpath>
+          <value>
+            <killedLeavings>
+              <ChunkSlagSteel>3</ChunkSlagSteel>
+              <ComponentIndustrial>2</ComponentIndustrial>
+              <Plasteel>15</Plasteel>
+            </killedLeavings>
+          </value>
+        </li>
+
+
+        <!-- Defs\ThingDefs_Buildings\Buildings_Mech.xml -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="Defoliator"]/killedLeavings</xpath>
+          <value>
+            <killedLeavings>
+              <ChunkSlagSteel>4</ChunkSlagSteel>
+              <Plasteel>50</Plasteel>
+              <ComponentIndustrial>2</ComponentIndustrial>
+              <ComponentSpacer>1</ComponentSpacer>
+            </killedLeavings>
+          </value>
+        </li>
+
+
+        <!-- Defs\ThingDefs_Buildings\Buildings_ConditionCausers.xml -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[@Name="ConditionCauserBase"]/killedLeavings</xpath>
+          <value>
+            <killedLeavings>
+              <ChunkSlagSteel>10</ChunkSlagSteel>
+              <Steel>75</Steel>
+              <Plasteel>50</Plasteel>
+              <ComponentIndustrial>2</ComponentIndustrial>
+              <ComponentSpacer>1</ComponentSpacer>
+            </killedLeavings>
+          </value>
+        </li>
+      </operations>
+    </match>
+
+  </Operation>
+</Patch>
