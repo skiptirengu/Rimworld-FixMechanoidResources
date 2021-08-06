@@ -2,6 +2,7 @@ Revert Tynan's stupid nerf to mechanoid resources drop (don't buy his book)
 
 Base Game:
 + Centipede = 50 Steel, 10 Plasteel, 2 Components
++ Termite (introduced on 1.3) = 50 Steel, 10 Plasteel, 2 Components
 + Lancer/Scyther = 20 Steel, 5 Plasteel, 1 Component
 
 Royalty:

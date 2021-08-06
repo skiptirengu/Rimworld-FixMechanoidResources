@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationReplace">
+    <!-- 
+      Termite was intruced on 1.3. 
+      Make drop rate similar to centipede, since they're pretty similar to each other.
+    -->
+    <xpath>/Defs/ThingDef[defName="Mech_Termite"]/butcherProducts</xpath>
+    <value>
+      <butcherProducts>
+        <Steel>50</Steel>
+        <Plasteel>10</Plasteel>
+        <ComponentIndustrial>2</ComponentIndustrial>
+      </butcherProducts>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
     <xpath>/Defs/ThingDef[defName="Mech_Centipede"]/butcherProducts</xpath>
     <value>
       <butcherProducts>
