@@ -79,7 +79,7 @@
 
         <!-- Defs/ThingDefs_Races/Races_AncientMechanoid.xml -->
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/ThingDef[defName="VFE_Mech_Carpenter"]/butcherProducts</xpath>
+          <xpath>/Defs/ThingDef[defName="VFE_AncientMech_AncientCarpenter"]/butcherProducts</xpath>
           <value>
             <butcherProducts>
               <Steel>50</Steel>
