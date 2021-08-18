@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>OskarPotocki.VFE.Mechanoid</li>
+    </mods>
+
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- Defs/ThingDefs_Races/Races_Mechanoid.xml -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VFE_Mech_Centipede"]/butcherProducts</xpath>
+          <value>
+            <butcherProducts>
+              <Steel>50</Steel>
+              <Plasteel>10</Plasteel>
+              <ComponentIndustrial>2</ComponentIndustrial>
+            </butcherProducts>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[@Name="VFE_MechanoidWalker"]/butcherProducts</xpath>
+          <value>
+            <butcherProducts>
+              <Steel>20</Steel>
+              <Plasteel>5</Plasteel>
+              <ComponentIndustrial>1</ComponentIndustrial>
+            </butcherProducts>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VFE_Mech_Carpenter"]/butcherProducts</xpath>
+          <value>
+            <butcherProducts>
+              <Steel>50</Steel>
+              <Plasteel>10</Plasteel>
+              <ComponentIndustrial>2</ComponentIndustrial>
+            </butcherProducts>
+          </value>
+        </li>
+
+
+        <!-- Defs/ThingDefs_Races/Races_AdvancedMechanoid.xml -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VFE_Mech_AdvancedCentipede"]/butcherProducts</xpath>
+          <value>
+            <butcherProducts>
+              <Steel>55</Steel>
+              <Plasteel>15</Plasteel>
+              <ComponentIndustrial>2</ComponentIndustrial>
+            </butcherProducts>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[@Name="VFE_AdvancedMechanoidWalker"]/butcherProducts</xpath>
+          <value>
+            <butcherProducts>
+              <Steel>25</Steel>
+              <Plasteel>5</Plasteel>
+              <ComponentIndustrial>1</ComponentIndustrial>
+            </butcherProducts>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VFE_Mech_AdvancedCarpenter"]/butcherProducts</xpath>
+          <value>
+            <butcherProducts>
+              <Steel>55</Steel>
+              <Plasteel>15</Plasteel>
+              <ComponentIndustrial>2</ComponentIndustrial>
+            </butcherProducts>
+          </value>
+        </li>
+
+
+        <!-- Defs/ThingDefs_Races/Races_AncientMechanoid.xml -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VFE_Mech_Carpenter"]/butcherProducts</xpath>
+          <value>
+            <butcherProducts>
+              <Steel>50</Steel>
+              <Plasteel>10</Plasteel>
+              <ComponentIndustrial>2</ComponentIndustrial>
+            </butcherProducts>
+          </value>
+        </li>
+      </operations>
+    </match>
+
+  </Operation>
+</Patch>
