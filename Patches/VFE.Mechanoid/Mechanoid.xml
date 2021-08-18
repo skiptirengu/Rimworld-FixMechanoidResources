@@ -2,7 +2,7 @@
 <Patch>
   <Operation Class="PatchOperationFindMod">
     <mods>
-      <li>OskarPotocki.VFE.Mechanoid</li>
+      <li>Vanilla Factions Expanded - Mechanoids</li>
     </mods>
 
     <match Class="PatchOperationSequence">
