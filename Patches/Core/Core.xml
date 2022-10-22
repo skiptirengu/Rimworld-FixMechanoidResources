@@ -16,7 +16,7 @@
   </Operation>
 
   <Operation Class="PatchOperationReplace">
-    <xpath>/Defs/ThingDef[defName="Mech_Centipede"]/butcherProducts</xpath>
+    <xpath>/Defs/ThingDef[@Name="MechCentipede"]/butcherProducts</xpath>
     <value>
       <butcherProducts>
         <Steel>50</Steel>
